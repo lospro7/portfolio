@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Carlos J. Espinoza | Full stack engineer</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div class="header">
+            <h1>Carlos J. Espinoza</h1>
+            <div>Full Stack Engineer</div>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/lospro7" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/carlosjespinoza/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+    
+    <div id="experience">
+        <div class="header">
+            <h2>Experience</h2>
+        </div>
+        
+        <div class="experience">
+            <h3>Imgur</h3>
+            <div><span class="title">Full Stack Engineer</span>&nbsp;&nbsp;&nbsp;<span class="length">March 2013 - Present</span></div>
+            <div class="description">
+                Yes, I work at the Internet and Imgur's entire stack. I've worked on some cool projects: <a href="http://imgur.com/blog/2014/01/27/image-analytics/" target="_blank">image analytics</a>, <a href="http://imgur.com/blog/2014/07/22/tech-tuesday-building-imgur-search/" target="_blank">Imgur search</a>, <a href="http://imgur.com/blog/2014/10/09/introducing-gifv/" target="_blank">gifv</a>, and can't wait for the next challenge.
+            </div>
+        </div>
+
+        <div class="experience">
+            <h3>OCLC</h3>
+            <div><span class="title">Sofware Engineer</span>&nbsp;&nbsp;&nbsp;<span class="length">September 2010 - March 2013</span></div>
+            <div class="description">
+                I worked on OCLC's full text search engine, written in C, that powers all
+                of its products. I added new features, fixed bugs, and provided production support.
+                Then I worked on a migration project to move OCLC away from Oracle and into HBase.
+                I implemented MapReduce jobs, and created tools to monitor and manage our Hadoop stack.
+                We open-sourced some of those tools.
+            </div>
+        </div>
+
+        <div class="experience">
+            <h3>Tech Corps Ohio</h3>
+            <div><span class="title">Lead Job Coach</span>&nbsp;&nbsp;&nbsp;<span class="length">July 2010 - August 2010</span></div>
+            <div class="description">
+                I was an instructor at a summer program for inner city high school students
+                who aspire to become technology leaders.
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="header">
+            <h2>Skills</h2>
+            <div>PHP, Java, Go, C, HBase, MapReduce, HDFS, Flume, Kafka, Elasticsearch, HTML, CSS, SQL, Varnish, Nginx, Linux, among other things...</div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="header">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="project">
+            <h3>EZwurd</h3>
+            <div class="description">
+                <div><img src="images/ezwurd.jpg" alt="" /></div>
+                <div><a href="http://ezwurd.com">EZwurd.com</a></div>
+                <div>Learn to pronunciate Spanish the easy way</div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Snapshot S3 Util</h3>
+            <div class="description">
+                <div><a href="https://github.com/lospro7/snapshot-s3-util">Github</a></div>
+                <div>
+                    Hack for exporting HBase snapshots in and out of S3
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>HBase backup tool</h3>
+            <div class="description">
+                <div><a href="https://github.com/oclc/HBase-Backup">Github</a></div>
+                <div>
+                    Utility to backup and restore HBase tables at OCLC.<br/>
+                    Written before HBase snapshots were available
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Racer</h3>
+            <div class="description">
+                <div><img src="images/racer.jpg" alt="" /></div>
+                <div><a href="https://github.com/lospro7/racer" target="_blank">Github</a> - <a href="https://www.youtube.com/watch?v=47RREkIukDA" target="_blank">Video</a></div>
+                <div>
+                    A game/simulator concept I attempted during college days.<br/>
+                    Written in C++ using OpenGL, and BulletPhysics
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Othello</h3>
+            <div class="description">
+                <div><img src="images/othello.jpg" alt="" /></div>
+                <div><a href="https://github.com/lospro7/othello" target="_blank">Github</a></div>
+                <div>
+                    Play against another person or against your computer
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        I'm just a footer. Ignore me
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#nav a").click(function () {
+            var loc = $(this).attr('href');
+            $("html, body").animate({ scrollTop: $(loc).offset().top }, 500);
+        });
+    });
+</script>
+</body>
+</html>
