@@ -2,24 +2,153 @@
 <head>
     <title>Carlos J. Espinoza | Full stack engineer</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, user-scalable=yes">
-    <meta name="description" content="I'm a self-motivated software engineer with experience in high load environments.">
-    <meta name="keywords" content="Golang, PHP, Java, Varnish, Nginx, HBase, HDFS, Hadoop, MapReduce, Linux, AWS, MySQL, Elasticsearch, Redis, VLC, HAProxy, Flume, EC2, S3, Kafka, Javascript, React, HTML, CSS">
+    <meta name="description" content="Engineering leader, soccer player, dancer, producer">
+    <meta name="keywords" content="Javascript, React, React Native, Firebase, PHP, Go, PHP, Java, Varnish, Nginx, Linux, AWS, MySQL, Elasticsearch, Redis, HAProxy, HTML, CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+html {
+    scroll-behavior: smooth;
+}
+body, html, div, h1, h2, h3, h4, p, span, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #eee;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 32px;
+    color: #333;
+}
+h3 {
+    font-size: 26px;
+}
+a {
+    color: #7599C8;
+    text-decoration: none;
+}
+a:hover {
+    color: #4D72A1;
+}
+img {
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+#container {
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#header {
+    margin-bottom: 80px;
+}
+#header .header {
+    float: left;
+}
+#nav {
+    float: right;
+    margin-top: 16px;
+}
+#nav ul {
+    list-style-type: none;
+}
+#nav ul li {
+    padding-right: 10px;
+    float: left;
+}
+#experience {
+    margin-bottom: 100px;
+}
+#experience .header {
+    margin-bottom: 20px;
+}
+#experience .experience {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#experience .experience h3 {
+    margin-bottom: 20px;
+}
+#experience .experience .title {
+    font-size: 20px;
+    color: #333;
+    text-decoration: underline;
+}
+#experience .experience .length {
+    color: #777;
+    font-style: italic;
+}
+#experience .experience .description {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #444;
+    line-height: 1.8em;
+}
+#skills {
+    margin-bottom: 100px;
+}
+#skills .header div {
+    max-width: 380px;
+    text-align: center;
+    margin: 10px auto 60px auto;
+}
+#projects {
+    width: inherit;
+    margin-bottom: 100px;
+}
+#projects .header {
+    margin-bottom: 40px;
+}
+#projects .project {
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+#projects .project {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+#projects .project .description img {
+    margin-bottom: 20px;
+}
+#projects .project h3 {
+    margin-bottom: 10px;
+}
+#footer {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #999;
+}
+#footer ul {
+    list-style-type: none;
+}
+#footer ul li {
+    display: inline;
+    margin-right: 6px;
+}
+</style>
 </head>
 <body>
 <div id="container">
     <div id="header">
         <div class="header">
             <h1>Carlos J. Espinoza</h1>
-            <div>Software engineer, music producer, athlete.</div>
+            <div>Engineering leader, soccer player, dancer, producer.</div>
         </div>
         <div id="nav">
             <ul>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="https://github.com/lospro7" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/carlosjespinoza/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/lospro7" target="_blank" class="fa fa-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/carlosjespinoza/" target="_blank" class="fa fa-linkedin"></a></li>
             </ul>
         </div>
         <div style="clear: both"></div>
@@ -32,19 +161,32 @@
         
         <div class="experience">
             <h3>Imgur</h3>
-            <div><span class="title">Lead Full Stack Engineer</span>&nbsp;&nbsp;&nbsp;<span class="length">March 2013 - Present</span></div>
+            <div><span class="title">Head of Platform/Director of Platform Engineering</span>&nbsp;&nbsp;&nbsp;<span class="length">Nov. 2018 - Apr. 2020</span></div>
             <div class="description">
-                The amount of experience I've picked up at Imgur is astounding. I've contributed to practically every part of the stack working with technologies including Varnish, HAProxy, Nginx, PHP, Memcache, Redis, MySQL, Elasticsearch, Flume, Kafka, MapReduce, Hadoop, and HBase, EC2, S3.
-                <br/>
-                I've lead the planning and execution of various projects such as image analytics, search, gifv, notifications, A/B testing frameworks, API, video processing pipelines, event pipelines, followers, etc. 
-                <br/>
-                I've worked closely with desktop, mobile web, Android, and iOS clients to design new and RESTful APIs.
-                <br/>
-                I've also architected notifications, image analytics, video processing, stream processing, and various other systems to scale to hundreds of millions monthly users, and I created Imgur's image analytics data pipeline which supported over 5B daily events and processed them for offline and real-time access.
+                Ran Imgur’s platform team of 15 frontend, backend, and full-stack engineers.
+                Promoted and grew managers within the team.
+                Hired talent from around the world.
+                In charge of delivering software to different teams in the company and our consumers.
+                Worked directly with leadership to align on how engineering can best serve the company. 
+                Worked with engineers and managers to build a positive and productive working 
+                environment for the engineering team.
             </div>
-            <div><span class="title">Engineering manager</span>&nbsp;&nbsp;&nbsp;<span class="length">September 2015 - February 2017</span></div>
+            <div><span class="title">Engineering Manager/Senior Engineering Manager</span>&nbsp;&nbsp;&nbsp;<span class="length">Sep. 2015 - Nov. 2018</span></div>
             <div class="description">
-                I've also managed Imgur's small team of highly-motivated engineers. I worked with the engineers to help find their passions, mentor, and help solve engineering problems. I worked closely with high level executives to meet deadlines and company goals. Interviewed several engineering candidates, reviewed resumes. Was in charge of successful execution of backend projects while being a contributor.
+                Managed execution of projects such as Snacks, personalized notifications,
+                site redesigns, backend migrations, revenue initiatives, and community tools.
+                Led a team of senior full-stack engineers following agile processes.
+                Interviewed and hired for interns, juniors, and mid-level engineers.
+                Led execution of platform migrations from PHP to Go.
+                Mentored engineers to help them find their passions and grow their careers.
+            </div>
+            <div><span class="title">Full-stack Engineer</span>&nbsp;&nbsp;&nbsp;<span class="length">Mar. 2013 - Sep. 2015</span></div>
+            <div class="description">
+                Worked on planning, execution, and leading of various projects including: 
+                image analytics, search, gifv, notifications, A/B testing frameworks, APIs, 
+                video processing pipelines, event pipelines, and followers. 
+                Architected these systems to scale to hundreds of millions of monthly users 
+                and billions of daily events.
             </div>
         </div>
 
@@ -52,11 +194,9 @@
             <h3>OCLC</h3>
             <div><span class="title">Sofware Engineer</span>&nbsp;&nbsp;&nbsp;<span class="length">September 2010 - March 2013</span></div>
             <div class="description">
-                I worked on OCLC's full text search engine, written in C, that powers all
-                of its products. I added new features, fixed bugs, and provided production support.
-                Then I worked on a migration project to move OCLC away from Oracle and into HBase.
-                I implemented MapReduce jobs, and created tools to monitor and manage our Hadoop stack.
-                We open-sourced some of those tools.
+                Developed and maintained OCLC’s full text search engine written in C. 
+                Migrated data from Oracle to HBase using MapReduce tools and techniques. 
+                Implemented MapReduce jobs, and tools to monitor such jobs.
             </div>
         </div>
 
@@ -64,37 +204,42 @@
             <h3>Tech Corps Ohio</h3>
             <div><span class="title">Lead Job Coach</span>&nbsp;&nbsp;&nbsp;<span class="length">July 2010 - August 2010</span></div>
             <div class="description">
-                I was an instructor at a summer program for inner city high school students
-                who aspire to become technology leaders.
+                Instructed and mentored inner-city high school students who aspire to become technology leaders.
             </div>
         </div>
     </div>
 
     <div id="skills">
         <div class="header">
-            <h2>Skills</h2>
-            <div>Golang, PHP, Java, Varnish, Nginx, HBase, HDFS, Hadoop, MapReduce, Linux, AWS, MySQL, Elasticsearch, Redis, VLC, HAProxy, Flume, EC2, S3, Kafka, Javascript, React, HTML, CSS</div>
+            <h2>Technical skills</h2>
+            <div>Javascript, Node, PHP, Go, Firebase, React DOM, React Native, Redux, Expo.io, Material-UI, MySQL, Redis, Varnish, Elasticsearch, AWS, Agile, Product Development/Design.</div>
         </div>
     </div>
 
     <div id="projects">
         <div class="header">
-            <h2>Previous Projects</h2>
+            <h2>Projects</h2>
         </div>
 
         <div class="project">
-            <h3>EZwurd</h3>
             <div class="description">
-                <div><img src="images/ezwurd.jpg" alt="" /></div>
-                <div><a href="http://ezwurd.com">EZwurd.com</a></div>
-                <div>Learn to pronunciate Spanish the easy way</div>
+                <div><img src="images/dancetonight.png" alt="Dance Tonight" /></div>
+                <h3><a href="https://dancetonightbayarea.com" target="_blank">Dance Tonight</a></h3>
+                <div>Find dance classes near you.</div>
             </div>
         </div>
 
         <div class="project">
-            <h3>Snapshot S3 Util</h3>
             <div class="description">
-                <div><a href="https://github.com/lospro7/snapshot-s3-util">Github</a></div>
+                <div><a href="https://ezwurd.com" target="_blank"><img src="images/ezwurd.jpg" alt="EZwurd" /></a></div>
+                <h3><a href="https://ezwurd.com" target="_blank">EZwurd</a></h3>
+                <div>Spanish pronunciation made easy</div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="description">
+                <h3><a href="https://github.com/lospro7/snapshot-s3-util" target="_blank">Snapshot S3 Util</a></h3>
                 <div>
                     Hack for exporting HBase snapshots in and out of S3
                 </div>
@@ -102,9 +247,8 @@
         </div>
 
         <div class="project">
-            <h3>HBase backup tool</h3>
             <div class="description">
-                <div><a href="https://github.com/oclc/HBase-Backup">Github</a></div>
+                <h3><a href="https://github.com/oclc/HBase-Backup" target="_blank">HBase backup tool</a></h3>
                 <div>
                     Utility to backup and restore HBase tables at OCLC.<br/>
                     Written before HBase snapshots were available
@@ -113,30 +257,41 @@
         </div>
 
         <div class="project">
-            <h3>Racer</h3>
             <div class="description">
-                <div><img src="images/racer.jpg" alt="" /></div>
-                <div><a href="https://github.com/lospro7/racer" target="_blank">Github</a> - <a href="https://www.youtube.com/watch?v=47RREkIukDA" target="_blank">Video</a></div>
                 <div>
-                    A game/simulator concept I attempted during college days.<br/>
-                    Written in C++ using OpenGL, and BulletPhysics
+                    <a href="https://github.com/lospro7/racer" target="_blank">
+                        <img src="images/racer.jpg" alt="" />
+                    </a>
+                </div>
+                <h3><a href="https://github.com/lospro7/racer" target="_blank">Racer</a></h3>
+                <div>
+                    A game/simulator concept.<br/>
+                    Written in C++ using OpenGL, and BulletPhysics<br/>
+                    <a href="https://www.youtube.com/watch?v=47RREkIukDA" target="_blank">Video demo</a>
                 </div>
             </div>
         </div>
 
         <div class="project">
-            <h3>Othello</h3>
             <div class="description">
-                <div><img src="images/othello.jpg" alt="" /></div>
-                <div><a href="https://github.com/lospro7/othello" target="_blank">Github</a></div>
                 <div>
-                    Play against another person or against your computer
+                    <a href="https://github.com/lospro7/othello" target="_blank">
+                        <img src="images/othello.jpg" alt="" />
+                    </a>
+                </div>
+                <h3><a href="https://github.com/lospro7/othello" target="_blank">Othello</a></h3>
+                <div>
+                    Play against another person or against the computer
                 </div>
             </div>
         </div>
     </div>
     <div id="footer">
-        I'm just a footer. Nothing to see here.
+        <ul>
+            <li>Carlos Espinoza @ 2020</li>
+            <li><a href="https://github.com/lospro7" target="_blank" class="fa fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/carlosjespinoza/" target="_blank" class="fa fa-linkedin"></a></li>
+        </ul>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
